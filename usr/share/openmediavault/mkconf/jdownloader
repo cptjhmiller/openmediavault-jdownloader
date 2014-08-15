@@ -26,7 +26,7 @@ userchange() {
   "uniquedeviceidsalt" : "default",
   "latesterror" : "NONE",
   "password" : "${pass_word}",
-  "devicename" : "JDownloader@Openmediavault"
+  "devicename" : "JDownloader@root"
 }
 EOF
 chmod 777 $USERFILE

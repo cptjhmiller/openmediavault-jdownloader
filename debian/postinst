@@ -22,8 +22,8 @@ case "$1" in
 		
         if [ ! -e /opt/jdownloader/JDownloader.jar ]; then
             echo "Extracting archive..."
-            tar zxvf /opt/jdownloader/jdownloader.tar.gz
-            rm -Rf /opt/jdownloader/jdownloader.tar.gz -C /
+            tar zxvf /opt/jdownloader/jdownloader.tar.gz -C /
+            rm -Rf /opt/jdownloader/jdownloader.tar.gz
         fi
 
         chmod 775 /opt

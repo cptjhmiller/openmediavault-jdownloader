@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: openmediavault-couchpotato\n"
+"Project-Id-Version: openmediavault-jdownloader\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-17 06:49-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -26,13 +26,13 @@ msgstr ""
 msgid "Show Tab"
 msgstr ""
 
-msgid "Show tab containing Couchpotato web interface frame."
+msgid "Show tab containing Jdownloader web interface frame."
 msgstr ""
 
-msgid "Couchpotato"
+msgid "Jdownloader"
 msgstr ""
 
-msgid "Couchpotato Web Interface"
+msgid "Jdownloader Web Interface"
 msgstr ""
 
 msgid "Web Interface"

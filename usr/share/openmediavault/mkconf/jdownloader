@@ -16,21 +16,26 @@ userchange() {
     pass_word=$(omv_config_get "//services/jdownloader/jdpassword")
     cat > $USERFILE <<EOF
 {
-  "lastlocalport" : 8188,
+  "manualremoteport" : 3129,
   "connectip" : "api.jdownloader.org",
   "autoconnectenabledv2" : true,
   "clientconnectport" : 80,
   "directconnectmode" : "LAN",
   "uniquedeviceid" : "default",
-  "email" : "${user_name}",
+  "lastupnpport" : 0,
+  "cesblackorwhitelisttype" : "BLACKLIST",
   "uniquedeviceidsalt" : "default",
+  "manuallocalport" : 3129,
+  "cesenabled" : true,
+  "lastlocalport" : 8188,
+  "email" : "${user_name}",
   "latesterror" : "NONE",
   "password" : "${pass_word}",
-  "devicename" : "JDownloader@root"
+  "devicename" : "JDownloader@jdownloader"
 }
 EOF
 chmod 777 $USERFILE
-#chown jdownloader:users $USERFILE
+chown jdownloader:users $USERFILE
 
 }
 

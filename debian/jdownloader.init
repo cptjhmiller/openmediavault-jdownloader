@@ -24,12 +24,18 @@ PID_FILE="${PID_PATH}/jdownloader.pid"
 JAVA="/usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java"
 
 # Run as user
-RUN_AS="root"
+RUN_AS="jdownloader"
 
 # Jdownloader install location
 JD_PATH="/opt/jdownloader"
 
-#TODO, check pid path is created,
+# Check pid path is created,
+if [ ! -d $PID_PATH ]; then
+    mkdir -p $PID_PATH
+    chown $RUN_AS
+fi
+
+
 #working start line
 #start-stop-daemon --start --quiet --background --user root --make-pidfile --pidfile $PID_FILE --chdir /opt/jdownloader --exec /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java -- -Dghostawt.library.path=/opt/jdownloader2/libs/ghostawt/linux64 -cp "./*:libs/*:/opt/jdownloader2/libs/ghostawt/*" ghostawt.GhostRunner org.jdownloader.startup.Main
 

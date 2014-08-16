@@ -24,6 +24,8 @@ case "$1" in
             echo "Extracting archive..."
             tar zxvf /opt/jdownloader/jdownloader.tar.gz -C /
             rm -Rf /opt/jdownloader/jdownloader.tar.gz
+            chmod 775 /opt/jdownloader -R
+            chown jdownloader:users /opt/jdownloader -R
         fi
 
         chmod 775 /opt
